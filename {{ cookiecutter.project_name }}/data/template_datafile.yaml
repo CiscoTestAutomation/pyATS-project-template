@@ -1,6 +1,10 @@
 {% if cookiecutter.use_datafile  == 'y' %}
-{% macro set filename = input("datafile_name [template_datafile]: ") %}
+{% macro get_input() %}
+    filename = input("datafile_name [template_datafile]: ")
+    if not filename:
+        filename = "template_datafile"
 {% endmacro %}
+{{ get_input() }}
 
 #*******************************************************************************
 #*                           Test Script Template
