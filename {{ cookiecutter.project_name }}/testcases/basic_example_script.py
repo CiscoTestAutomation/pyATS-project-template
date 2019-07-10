@@ -30,17 +30,28 @@ class common_setup(aetest.CommonSetup):
 
     # CommonSetup have subsection. 
     # You can have 1 to as many subsection as wanted
-    {% for i in range(cookiecutter.number_of_test_cases | int) %}
+    # here is an example of 2 subsections
+
+    # First subsection
     @aetest.subsection
-    def sample_subsection_{{i + 1}}(self):
+    def sample_subsection_1(self):
         """ Common Setup subsection """
         log.info("Aetest Common Setup ")
 
+    # If you want to get the name of current section, 
+    # add section to the argument of the function.
+
+    # Second subsection
+    @aetest.subsection
+    def sample_subsection_2(self, section):
+        """ Common Setup subsection """
+        log.info("Inside %s" % (section))
+
         # And how to access the class itself ?
+
         # self refers to the instance of that class, and remains consistent
         # throughout the execution of that container.
         log.info("Inside class %s" % (self.uid))
-    {% endfor %}
 
 ###################################################################
 ###                     TESTCASES SECTION                       ###
@@ -49,8 +60,9 @@ class common_setup(aetest.CommonSetup):
 # This is how to create a testcase
 # You can have 0 to as many testcase as wanted
 
-# Testcase name : tc_one
-class tc_one(aetest.Testcase):
+{% for i in range(cookiecutter.number_of_test_cases | int) %}
+# Testcase name : tc_{{i}}
+class tc_{{i}}(aetest.Testcase):
     """ This is user Testcases section """
 
     # Testcases are divided into 3 sections
@@ -83,6 +95,7 @@ class tc_one(aetest.Testcase):
     def clean_testcase(self):
         """ Testcase cleanup section """
         log.info("Pass testcase cleanup")
+{% endfor %}
 
 #####################################################################
 ####                       COMMON CLEANUP SECTION                 ###
