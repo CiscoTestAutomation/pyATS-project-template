@@ -1,0 +1,142 @@
+#*******************************************************************************
+#*                           Test Script Template
+#* ----------------------------------------------------------------------------
+#* ABOUT THIS TEMPLATE - Please read
+#*
+#* - Any comments with "#*" in front of them (like this entire comment box) are
+#*   for template clarifications only and should be removed from the final
+#*   product.
+#*
+#* - Anything enclosed in <> must be replaced by the appropriate text for your
+#*   application
+#*
+#* Author:
+#*    Siming Yuan, Automation Strategy - Core Software Group (CSG)
+#*
+#* Support:
+#*    pyats-support@cisco.com
+#*
+#* Description:
+#*   This template file describes how to write an AEtest input datafile.
+#*
+#* Read More:
+#*   For the complete and up-to-date user guide on AEtest template, visit:
+#*   URL= http://wwwin-pyats.cisco.com/documentation/html/aetest/index.html
+#*
+#*******************************************************************************
+
+
+extends:  # file(s) that this datafile extends/builds on.
+          # allows datafiles to be chained together in extension
+          # relationships. full path/name or name file in the same folder.
+          # (optional)
+
+parameters:   # testscript parameters
+              # all key/values here becomes the testscript's base parameters
+              # (optional)
+
+processors:   # global processors
+              # pre/post processors to be used as part of this script run
+              # (optional)
+
+    pre:      # list of global pre-processors
+              #   eg: mylib.mymodule.preprocessor_func
+              # (optional)
+
+    post:     # list of global post-processors
+              #   eg: mylib.mymodule.postprocessor_func
+              # (optional)
+
+common_setup:   # common_setup block
+                # everything related to script's common_setup section
+                # (optional)
+
+    parameters:   # common_setup parameters
+                  # key/values becomes parameters belonging to common_setup
+                  # section.
+                  # (optional)
+
+    processors:   # common_setup local processors
+                  # pre/post processors to be used on common_setup
+                  # (optional)
+
+        pre:      # list of pre-processors for common_setup section
+                  #   eg: mylib.mymodule.preprocessor_func
+                  # (optional)
+
+        post:     # list of post-processors for common_setup section
+                  #   eg: mylib.mymodule.postprocessor_func
+                  # (optional)
+
+    # any custom key/value pairs to be set as data (attributes) to
+    # your script's common_setup section
+    <key>: <value>
+
+testcases:      # testcases block
+                # all testcase related info gets defined under here
+                # (optional)
+
+    <name>:     # testcase class name
+                # this needs to match the testcase's class definition.
+                # do not confuse with the testcase's uid
+                #   eg: MyTestcase
+                # (mandatory)
+
+        uid:    # testcase's string uid
+                # use this to alter the testcase's reported uid
+                # (optional)
+
+        groups:     # testcase grouping
+                    # list of groups this testcase belongs to. See testcase
+                    # grouping feature under flow control documentation.
+                    # (optional)
+
+        description:    # testcase description
+                        # string describing what this testcase does
+                        # (optional)
+
+        processors:   # testcase's local processors
+                      # pre/post processors to be used in this testcase
+                      # (optional)
+
+            pre:      # list of pre-processors for this testcase
+                      #   eg: mylib.mymodule.preprocessor_func
+                      # (optional)
+
+            post:     # list of post-processors for this testcase
+                      #   eg: mylib.mymodule.postprocessor_func
+                      # (optional)
+
+
+        # any custom key/value pairs to be set as data (attributes) to
+        # this testcase class
+        <key>: <value>
+
+common_cleanup:   # common_cleanup block
+                  # everything related to script's common_cleanup section
+                  # (optional)
+
+    parameters:   # common_cleanup parameters
+                  # key/values becomes parameters belonging to common_cleanup
+                  # section.
+                  # (optional)
+
+    processors:   # common_cleanup local processors
+                  # pre/post processors to be used on common_cleanup
+                  # (optional)
+
+        pre:      # list of pre-processors for common_cleanup section
+                  #   eg: mylib.mymodule.preprocessor_func
+                  # (optional)
+
+        post:     # list of post-processors for common_cleanup section
+                  #   eg: mylib.mymodule.postprocessor_func
+                  # (optional)
+
+    # any custom key/value pairs to be set as data (attributes) to
+    # your script's common_cleanup section
+    <key>: <value>
+
+# any other key/value pairs to be set as variables/attributes directly
+# into your testscript module
+<key>: <value>

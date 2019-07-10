@@ -1,0 +1,5 @@
+{
+    "project_name": "cookiecutter-pyats-project",
+    "project_description": "A cookiecutter to generate pyATS scripts.",
+    "testbed_name": "template_testbed"
+}
