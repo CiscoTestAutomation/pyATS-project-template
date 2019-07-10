@@ -32,8 +32,7 @@ class common_setup(aetest.CommonSetup):
     # You can have 1 to as many subsection as wanted
     # here is an example of 2 subsections
 
-    {% set n = int(cookiecutter.number_of_test_cases) %}
-    {% for i in range(1, n) %}
+    {% for i in range(1, cookiecutter.number_of_test_cases | int) %}
         print(i)
     {% endfor %}
 
