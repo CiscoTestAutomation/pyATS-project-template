@@ -30,21 +30,17 @@ class common_setup(aetest.CommonSetup):
 
     # CommonSetup have subsection. 
     # You can have 1 to as many subsection as wanted
-
     {% for i in range(cookiecutter.number_of_test_cases | int) %}
     @aetest.subsection
     def sample_subsection_{{i + 1}}(self):
         """ Common Setup subsection """
         log.info("Aetest Common Setup ")
-        log.info("Inside %s" % (section))
 
         # And how to access the class itself ?
-
         # self refers to the instance of that class, and remains consistent
         # throughout the execution of that container.
         log.info("Inside class %s" % (self.uid))
     {% endfor %}
-
 
 ###################################################################
 ###                     TESTCASES SECTION                       ###
