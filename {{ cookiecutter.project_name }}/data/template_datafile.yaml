@@ -1,5 +1,5 @@
 {% if cookiecutter.use_datafile  == 'y' %}
-{% filename = input("datafile_name [template_datafile]: ") %}
+{% set filename = input("datafile_name [template_datafile]: ") %}
 
 #*******************************************************************************
 #*                           Test Script Template
