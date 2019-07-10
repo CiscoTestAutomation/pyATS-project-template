@@ -1,3 +1,5 @@
+{% if cookiecutter.use_datafile  == 'y' %}
+
 #*******************************************************************************
 #*                           Test Script Template
 #* ----------------------------------------------------------------------------
@@ -140,3 +142,5 @@ common_cleanup:   # common_cleanup block
 # any other key/value pairs to be set as variables/attributes directly
 # into your testscript module
 <key>: <value>
+
+{% endif %}
