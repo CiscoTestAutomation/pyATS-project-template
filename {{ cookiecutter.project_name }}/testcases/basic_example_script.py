@@ -59,10 +59,9 @@ class common_setup(aetest.CommonSetup):
 
 # This is how to create a testcase
 # You can have 0 to as many testcase as wanted
-
 {% for i in range(cookiecutter.number_of_test_cases | int) %}
 # Testcase name : tc_{{i}}
-class tc_{{i}}(aetest.Testcase):
+class tc_{{i + 1}}(aetest.Testcase):
     """ This is user Testcases section """
 
     # Testcases are divided into 3 sections
