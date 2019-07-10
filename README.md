@@ -1,4 +1,4 @@
-cookiecutter-pyats-project
+cookiecutter-pyats-create-project
 ==============
 
 A cookiecutter to generate pyATS scripts
@@ -8,5 +8,5 @@ A cookiecutter to generate pyATS scripts
 
 ```
 pip install cookiecutter
-cookiecutter <yourGithubRepoLinkHere>
+cookiecutter https://github.com/sarahli10/cookiecutter-pyats-create-project.git
 ```
