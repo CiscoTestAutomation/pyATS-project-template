@@ -16,3 +16,4 @@ def generate_datafile():
 
 if __name__ == '__main__':
     generate_datafile()
+    print("{{ cookiecutter.project_name }} has been generated in your current directory")
