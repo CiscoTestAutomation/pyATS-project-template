@@ -7,8 +7,7 @@ THIS_DIR = os.path.dirname(os.path.abspath(__file__))
 def generate_datafile():
     src_file = "../{{ cookiecutter.project_name }}/data/template_datafile.yaml"
     
-    include_datafile = input("include_datafile? (yes or no): ")
-    if include_datafile: # yes, include the datafile
+    if "{{ cookiecutter.include_datafile }}": # yes, include the datafile
         filename = "{{ cookiecutter.datafile_name }}"
         dest_file = "../{{ cookiecutter.project_name }}/data/" + filename + ".yaml"
         os.rename(src_file, dest_file)
