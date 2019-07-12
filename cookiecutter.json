@@ -1,7 +1,7 @@
 {
     "project_name": "cookiecutter-pyats-create-project",
-    "project_description": "A cookiecutter to generate pyATS scripts.",
     "testbed_name": "template_testbed",
+    "datafile_name": "template_datafile",
     "number_of_test_cases": 1,
-    "use_datafile": "y"
+    "include_datafile": false,
 }
