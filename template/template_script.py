@@ -311,8 +311,8 @@ class TemplateTestcase(aetest.Testcase):
     #**********************************
     #* Testcase Unique Id, Name & Description
     #*
-    #*   Testcase uid should be unique to a test script, and is also used for
-    #*   result uploading to TIMS. BElow is their default values:
+    #*   Testcase uid should be unique to a test script. Below is their 
+    #*   default values:
     #*
     #*      uid             unique id of this Testcase class
     #*      name            alternative descriptive name, default uid
