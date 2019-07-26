@@ -15,6 +15,15 @@ bash$ pip install pyats[template]
 bash$ pyats create project
 ```
 
+## Advanced Template
+
+The `template/` folder contains a non-cookiecutter, self-explanatory advanced
+template.
+
+This advanced template contains an elaborate syntax scheme that describes
+the various optional components of pyATS scripts, and may serve as an advanced
+guide.
+
 ## General Information
 
 - Website: https://developer.cisco.com/pyats/
