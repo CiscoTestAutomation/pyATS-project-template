@@ -1,4 +1,4 @@
-# pyATS Template Cookie-cutter Template
+# pyATS Template using Cookiecutter
 
 pyATS [cookiecutter](https://cookiecutter.readthedocs.io/en/latest/) project
 template to be used with the `pyats create project` command.
