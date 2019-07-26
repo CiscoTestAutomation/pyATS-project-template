@@ -1,7 +1,5 @@
 {
-    "project_name": "cookiecutter-pyats-create-project",
-    "testbed_name": "template_testbed",
-    "datafile_name": "template_datafile",
-    "number_of_test_cases": 1,
-    "include_datafile": false
+    "project_name": "pyats-template",
+    "testcases": "",
+    "use_datafile": true
 }

@@ -1,0 +1,6 @@
+testcases: 
+{% for tc_name in cookiecutter.testcases %}
+    {{tc_name}}:     
+        uid: {{tc_name}}
+        
+{% endfor %}
