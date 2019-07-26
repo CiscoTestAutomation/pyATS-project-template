@@ -1,5 +1,8 @@
 {
     "project_name": "pyats-template",
-    "testcases": "",
+    "testcases": {
+        "testcase_one": "",
+        "testcase_two": ""
+    },
     "use_datafile": true
 }

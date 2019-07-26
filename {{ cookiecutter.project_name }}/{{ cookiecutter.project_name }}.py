@@ -2,6 +2,8 @@
 {{ cookiecutter.project_name }}.py
 
 '''
+# see https://pubhub.devnetcloud.com/media/pyats/docs/aetest/index.html
+# for documentation on pyATS test scripts
 
 # optional author information
 # (update below with your contact information if needed)

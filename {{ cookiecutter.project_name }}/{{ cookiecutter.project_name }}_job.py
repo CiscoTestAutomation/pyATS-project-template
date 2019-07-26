@@ -2,6 +2,8 @@
 {{ cookiecutter.project_name }}_job.py
 
 '''
+# see https://pubhub.devnetcloud.com/media/pyats/docs/easypy/jobfile.html
+# for how job files work
 
 # optional author information
 # (update below with your contact information if needed)

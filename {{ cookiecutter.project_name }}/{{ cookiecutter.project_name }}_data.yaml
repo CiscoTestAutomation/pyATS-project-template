@@ -1,3 +1,7 @@
+# datafile for {{ cookiecutter.project_name }}
+# see https://pubhub.devnetcloud.com/media/pyats/docs/aetest/datafile.html#
+# for how to use datafiles
+
 testcases: 
 {% for tc_name in cookiecutter.testcases %}
     {{tc_name}}:     

@@ -1,3 +1,6 @@
+'''
+hook to delete datafile if not needed
+'''
 import os
 
 def generate_datafile():
