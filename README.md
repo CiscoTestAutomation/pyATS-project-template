@@ -1,12 +1,22 @@
-cookiecutter-pyats-create-project
-==============
+# pyATS Template Cookie-cutter Template
 
-A cookiecutter to generate pyATS scripts
+pyATS [cookiecutter](https://cookiecutter.readthedocs.io/en/latest/) project
+template to be used with the `pyats create project` command.
 
 
-## usage
+## Installation & Uage
 
+```bash
+
+# with your pyATS environment
+bash$ pip install pyats[template]
+
+# create new template
+bash$ pyats create project
 ```
-pip install cookiecutter
-cookiecutter https://github.com/sarahli10/cookiecutter-pyats-create-project.git
-```
+
+## General Information
+
+- Website: https://developer.cisco.com/pyats/
+- Documentation: https://developer.cisco.com/docs/pyats/
+- Support: pyats-support-ext@cisco.com
